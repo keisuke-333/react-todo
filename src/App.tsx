@@ -12,7 +12,7 @@ const initialState: Task[] = [
   }, {
     id: 1,
     title: '最初のToDo',
-    done: true
+    done: false
   }
 ]
 
@@ -23,7 +23,7 @@ const App: React.FC = () => {
   return (
     <div>
       <TaskInput tasks={tasks} setTasks={setTasks} />
-      <TaskList tasks={tasks} />
+      <TaskList tasks={tasks} setTasks={setTasks} />
     </div>
   )
 }
